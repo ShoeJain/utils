@@ -1,0 +1,35 @@
+mcd() { [[ "$1" ]] && mkdir -p "$1" && cd "$1"; }
+
+cd() { 
+    builtin cd "$@" && ls 
+}
+
+open() {
+    vim $(find -name "$1")
+}
+
+alias src='source ~/.bashrc'
+alias q='exit'
+alias c='clear; ls'
+alias cls='clear; ls'
+alias h='history'
+alias cs='clear;ls'
+alias p='cat'
+alias pd='pwd'
+alias la='ls -alh'
+alias ll='ls -l'
+alias l='ls'
+alias t='time'
+alias k='kill'
+alias null='/dev/null'
+alias ..='cd ..'
+alias ...='cd ..; cd ..'
+alias ....='cd ..; cd ..; cd ..'
+alias ivm='vim'
+alias cta='cat'
+alias gerp='grep'
+alias sl='ls'
+alias rf='rm -rf'
+alias v='vim'
+alias vi='vim'
+alias at='cat'
